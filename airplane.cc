@@ -5,18 +5,18 @@
 /*********Airplane Simulation*******/
 
 #include"Airplane.h"
-#include<ctime>
+#include <ctime>
+#include <stdlib.h>
 using namespace std;
 
 
 Airplane::Airplane(int aTime){
 	arrivalTime = aTime;
-	passangers = rand(time(NULL)) % 525 + 0;
-	fuel = rand(time(NULL)) % 50 + 5
-	
-
+	srand(time(NULL));
+	passengers = rand() % 525 + 0;
+	fuel = rand() % 50 + 5;
 }
 
 int Airplane::numPass(){
-	return passangers;
+	return passengers;
 }
