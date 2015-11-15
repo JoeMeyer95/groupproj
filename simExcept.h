@@ -8,19 +8,18 @@
 #define SIMECEPT_H
 #include<iostream>
 #include<fstream>
-class Exception(){
+class Exception{
 	public:
-		virtual Exception() = 0;
-			//void fileOutput();
-		}
-	
+		//virtual Exception() = 0;
+        void fileOutput(std::ostream& outs);
+
 	private:
 		string type;
-	
+
 };
 
 class airplaneDiversion : private Exception {
-	
+
 };
 #endif
 
