@@ -20,3 +20,4 @@ Airplane::Airplane(int aTime){
 int Airplane::numPass(){
 	return passangers;
 }
+//changing
